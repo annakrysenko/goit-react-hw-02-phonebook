@@ -1,0 +1,14 @@
+.wrapper {
+    background-color: rgb(255, 255, 255);
+    width: 650px;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 15px;
+
+
+    display: flex;
+    row-gap: 15px;
+}
+
+
+
