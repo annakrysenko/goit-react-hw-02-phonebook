@@ -23,7 +23,7 @@ const ContactsList = ({ showFilteredContacts, OnClickDelete, title }) => {
             </li>
           ))
         ) : (
-          <p>There are no contacts here</p>
+          <p className={styles.no_contacts}>There are no contacts here</p>
         )}
       </ul>
     </>

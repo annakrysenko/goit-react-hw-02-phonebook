@@ -1,9 +1,9 @@
 .title {
-    font-size: 16px;
+    font-size: 18px;
     text-transform: uppercase;
     font-weight: 600;
     margin-top: 30px;
-    
+    text-align: center;
 }
 
 .list {
@@ -37,4 +37,9 @@
 .delete:hover {
     background-color: rgb(124, 51, 118);
     color: white;
+}
+
+.no_contacts {
+    color: rgba(255, 255, 255, 0.584);
+    text-align: center;
 }
