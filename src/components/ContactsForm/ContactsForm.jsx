@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import { Notify } from 'notiflix';
 import styles from './ContactsForm.module.css';
+import PropTypes from 'prop-types';
 
 class ContactsForm extends Component {
   state = {
@@ -69,5 +70,16 @@ class ContactsForm extends Component {
     );
   }
 }
+ContactsForm.propTypes = {
+  title: PropTypes.string.isRequired,
+  handleSubmit: PropTypes.func.isRequired,
+  contacts: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      name: PropTypes.string,
+      number: PropTypes.string,
+    })
+  ),
+};
 
 export default ContactsForm;
